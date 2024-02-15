@@ -6,24 +6,24 @@
 This project leverages a Jenkins distributed architecture, enhanced by Terraform for efficient infrastructure management and Ansible for seamless node provisioning. The setup features a master node and multiple slave nodes, designed to optimize CI/CD processes through scalable and flexible task distribution. 
 <br>
 <br>
-By utilizing Terraform, we automate cloud resource provisioning, while Ansible ensures consistent configuration across all nodes. This architecture not only accelerates development cycles by efficiently managing workloads but also improves reliability and scalability, catering to the dynamic demands of modern software projects.
+By utilizing Terraform, I automate cloud resource deployment, while Ansible ensures consistent configuration across all nodes. This architecture not only accelerates development cycles by efficiently managing workloads but also improves reliability and scalability, catering to the dynamic demands of modern software projects.
 
 ## Architecture Diagram
 
 
-![architecture_diagram](docs/images/jenkins-architecture-diagram.jpeg)
+![architecture_diagram](docs/images/architecture.jpg)
 
 
-## Setting Up the Infrastructure
+## Infrastructure Deployment
 
-Follow the steps in [Infrastructure](./infrastructure/README.md) to set up the infrastructure using Terraform.
+Follow the steps in [Deployment](./deployment/README.md) to set up the deployment using Terraform.
 
 ## Provisioning with Ansible
 
-After setting up the infrastructure, provision the servers using the steps described in [Provisioning](./provisioning/README.md).
+After setting up the deployment, provision the servers using the steps described in [Provisioning](./provisioning/README.md).
 
 ## Registering Jenkins Agents
-To scale Jenkins operations, agents can be dynamically registered from each EC2 node. This process allows for a more flexible and scalable CI/CD infrastructure, enabling Jenkins to distribute tasks across multiple environments efficiently.
+To scale Jenkins operations, agents can be dynamically registered from each EC2 node. This process allows for a more flexible and scalable CI/CD deployment, enabling Jenkins to distribute tasks across multiple environments efficiently.
 
 #### Quick Steps: <br>
 
